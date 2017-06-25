@@ -30,3 +30,8 @@ target_link_libraries(DBUS_Read_UPOWER_devies_battery_BAT1 ${DBUS_LIBRARIES})
 target_include_directories(DBUS_Read_UPOWER_devies_battery_BAT1 PUBLIC ${DBUS_INCLUDE_DIRS})
 target_compile_options(DBUS_Read_UPOWER_devies_battery_BAT1 PUBLIC ${DBUS_CFLAGS_OTHER})
 
+
+add_executable(DBUS_bluez_StartDiscovery src/dbus_bluez_StartDiscovery.cpp)
+target_link_libraries(DBUS_bluez_StartDiscovery ${DBUS_LIBRARIES})
+target_include_directories(DBUS_bluez_StartDiscovery PUBLIC ${DBUS_INCLUDE_DIRS})
+target_compile_options(DBUS_bluez_StartDiscovery PUBLIC ${DBUS_CFLAGS_OTHER})
